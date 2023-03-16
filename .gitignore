@@ -1,0 +1,5 @@
+/dist
+/node_modules
+/svelte-routing-master
+/.parcel-cache
+*.lock
