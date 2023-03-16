@@ -12,6 +12,25 @@
 
 
 
-<section>
-    <CountryList countries={countries}/>
-</section>
+<div class="countries-list">
+    <Navbar></Navbar>
+    <section class="countries-list-scrolling">
+        <CountryList countries={countries}/>
+    </section>
+</div>
+
+<style>
+    .countries-list{
+        width: 60%;
+        display: block;
+        margin: auto;
+       
+        
+        
+    }
+    .countries-list-scrolling{
+        overflow-y: auto;
+        padding: 1%;
+        height:80vh;
+    }
+</style>

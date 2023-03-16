@@ -4,9 +4,10 @@
     export let location; 
     let pathname = window.location.pathname;
     import NavBar1 from './testingNavbar.svelte';
+    let menuItem;
 </script>
 
-<NavBar1/>
+<NavBar1 bind:menuItem/>
 <div>
     <p>The location is {location.href}</p>
     <p>The pathName is {pathname}</p>

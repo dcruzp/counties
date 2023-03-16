@@ -10,29 +10,35 @@
 </ul> 
 
 
+
+
 <style>
     ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 2px;
   overflow: hidden;
-  background-color: #333;
+  background-color: #ffffff;
+  border-radius: 10px , 2px, 2px,2px;
 }
 
 li {
-  float: left;
+  float:left;
+  padding-left: 20px;
 }
 
 li a {
   display: block;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: large;
+  border-radius: 10px;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #f2f7f8;
 }
 </style>

@@ -4,12 +4,7 @@
     // Show mobile icon and display menu
     let showMobileMenu = false;
   
-    
-
-
-
-
-
+    export let menuItem;
 
     // List of navigation items
     const navItems = [
@@ -26,6 +21,11 @@
 
     // Mobile menu click event handler
     const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
+
+    const handleSelectedItemMenu = (item) => {
+      menuItem = item;
+      console.log(menuItem);
+    }
   
     // Media match query handler
     const mediaQueryHandler = e => {
@@ -51,7 +51,7 @@
       <ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
         {#each navItems as item}
           <li>
-            <a href={item.href}>{item.label}</a>
+            <a on:click={handleSelectedItemMenu(item.label)} href={item.href}>{item.label}</a>
           </li>
         {/each}
       </ul>
