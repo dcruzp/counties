@@ -10,8 +10,8 @@
     const navItems = [
       { label: "Asia", href: "/continents/Asia" },
       { label: "Africa", href: "/continents/Africa" },
-      { label: "NorthAmerica", href: "/continents/NorthAmerica" },
-      { label: "SouthAmerica", href: "/continents/SouthAmerica" },
+      { label: "North America", href: "/continents/NorthAmerica" },
+      { label: "South America", href: "/continents/SouthAmerica" },
       { label: "Antarctica", href: "/continents/Antarctica" },
       { label: "Europe", href: "/continents/Europe" },
       { label: "Oceania", href: "/continents/Oceania" }

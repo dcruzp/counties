@@ -1,19 +1,19 @@
 <script>
-
+  export let selected ;
+  const elements = ['Asia','Africa','North America','South America','Europe','Oceania']
 </script>
 
+
+
 <ul>
-    <li><a href="/home">Home</a></li>
-    <li><a href="/news">News</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="/about">About</a></li>
+    {#each elements as element}
+    <li on:click={()=>selected = element} on:keydown={()=>true}>{element}</li>
+    {/each}
 </ul> 
 
 
-
-
 <style>
-    ul {
+  ul {
   list-style-type: none;
   margin: 0;
   padding: 2px;
@@ -25,9 +25,10 @@
 li {
   float:left;
   padding-left: 20px;
+  cursor: pointer;
 }
 
-li a {
+li{
   display: block;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -38,7 +39,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+li:hover {
   background-color: #f2f7f8;
 }
 </style>

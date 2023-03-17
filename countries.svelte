@@ -7,13 +7,22 @@
         const req = await fetch(`https://restcountries.com/v3.1/all`); 
         countries = await req.json();
     }
-    load_countries(); 
+
+    async function load_countries_by_region (region){
+        const req = await fetch(`https://restcountries.com/v3.1/region/${region}`); 
+        countries = await req.json();
+        return countries;
+    }
+
+    let selected = "europe"; 
+
+    $: load_countries_by_region(selected); 
 </script>
 
 
 
 <div class="countries-list">
-    <Navbar></Navbar>
+    <Navbar bind:selected={selected}></Navbar>
     <section class="countries-list-scrolling">
         <CountryList countries={countries}/>
     </section>
