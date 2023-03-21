@@ -33,7 +33,7 @@
         width: 60%;
         display: block;
         margin: auto;
-       
+       margin-top: 20px;
         
         
     }
@@ -41,5 +41,6 @@
         overflow-y: auto;
         padding: 1%;
         height:80vh;
+        /* border-left: 1px solid gray; */
     }
 </style>

@@ -24,7 +24,6 @@
 
     const handleSelectedItemMenu = (item) => {
       menuItem = item;
-      console.log(menuItem);
     }
   
     // Media match query handler
