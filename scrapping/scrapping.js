@@ -23,12 +23,13 @@ const getTable = async () => {
 
 const fs = require('fs');
 
-
 getTable()
     .then((table) => {
+        // let _top10rows = table.slice(0,10);
         table.forEach((row) => {
             const _row = `${row.join(',')}\n`;
-            fs.appendFile('listOfContriesByPopulation.csv', _row, error => {if (error) {console.log(error);}});
+            //fs.unlink('listCountries.csv', error => {if (error) {console.log(error)} console.log('file deleted correctly')});
+            fs.appendFile('listCountries.csv', _row, error => {if (error) {console.log(error);}});
         });
     });
 
@@ -47,13 +48,15 @@ function getChildsInItem(item, tag) {
     const elem = data(tag);
     let array = [];
     elem.each((_id, el) => {
-        array.push(NormalizeString(data(el).text()))
+        let nor_text = NormalizeString(data(el).text()); 
+        array.push(nor_text);
     });
+    while(array.length<6) array.push(',');
     return array;
 }
 
 function NormalizeString(str) {
-    return str.replace(/^\s+|\s+$/g, '').replace(',','.')
+    return str.replace('\n', '').replaceAll(',','.');
 }
 // const cheerio = require('cheerio');
 // const $ = cheerio.load(

@@ -81,7 +81,7 @@
         </ul>
     </div>
     <div class="buttons">
-        <button class="btn">Sing In</button>
+        <button class="btn">Settings</button>
         <button
             class="menu-btn"
             on:click="{() => menuOpen =! menuOpen}"
@@ -133,14 +133,14 @@
     }
     .btn{
         font-size: 1.1em;
-        background: #dabab6;
+        background: #ffffff;
         padding: 0.5em 1.3em;
-        border-radius: 2px;
-        color: #fff;
+        border-radius: 4px;
+        color: #050303;
     }
 
     .btn:hover{
-        background: #c06051;
+        background: #75cbd1;
     }
 
     .menu-btn{
