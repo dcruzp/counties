@@ -17,6 +17,20 @@
             ],
         },
         {
+            dropdown: "Statistics",
+            subMenus: [
+                {
+                    id: 1,
+                    subDropdown: "Statistics",
+                    subMenuLinks: [
+                        "Countries by GDP", 
+                        "Countries by population",
+                        "Countries by Human Development Index"  
+                    ] 
+                }
+            ],
+        },
+        {
             dropdown: "Regions",
             subMenus: [
                 {

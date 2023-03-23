@@ -7,7 +7,7 @@
 
 <ul class="menu {dropdownOpen && 'menu-show'}">
     <li>
-        <a href="/#">{link.dropdown}</a>
+        <a href="/{link.dropdown.toLowerCase()}">{link.dropdown}</a>
     </li>
     {#each link.subMenus as subMenu (subMenu.id)}
         <SubDropdown {subMenu}/>
