@@ -15,6 +15,7 @@
     }
 
     let selected = "europe"; 
+    let elements = ['Asia','Africa','North America','South America','Europe','Oceania'];
 
     $: load_countries_by_region(selected); 
 </script>
@@ -22,7 +23,7 @@
 
 
 <div class="countries-list">
-    <Navbar bind:selected={selected}></Navbar>
+    <Navbar bind:selected={selected} bind:elements={elements}></Navbar>
     <section class="countries-list-scrolling">
         <CountryList countries={countries}/>
     </section>

@@ -1,6 +1,6 @@
 <script>
-  export let selected ;
-  const elements = ['Asia','Africa','North America','South America','Europe','Oceania']
+  export let selected;
+  export let elements;
 </script>
 
 <ul>
