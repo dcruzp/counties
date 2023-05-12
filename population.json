@@ -1,0 +1,115 @@
+[
+    {
+        "stmt": "SELECT * FROM population;",
+        "header": [
+            "CountryId",
+            "CountryName",
+            "Numbers",
+            "Percent",
+            "Date",
+            "Source",
+            "Notes"
+        ],
+        "rows": [
+            [
+                "1",
+                "World",
+                "8.020.285.000",
+                "100%",
+                "21 Mar 2023",
+                "UN projection[3]",
+                ""
+            ],
+            [
+                "2",
+                "China",
+                "1.411.750.000",
+                "17.6%",
+                "31 Dec 2022",
+                "Official estimate[4]",
+                "The population figure refers to mainland China. excluding its special administrative regions of Hong Kong and Macau. the former of which returned to Chinese sovereignty in 1997 and the latter in 1999."
+            ],
+            [
+                "3",
+                "India",
+                "1.388.163.000",
+                "17.3%",
+                "1 Mar 2023",
+                "Official projection[5]",
+                "The figure includes the population of the India-administered union territories of Jammu and Kashmir and Ladakh."
+            ],
+            [
+                "4",
+                "United States",
+                "334.524.000",
+                "4.17%",
+                "21 Mar 2023",
+                "National population clock[6]",
+                "The figure includes the 50 states and the District of Columbia. but excludes the territories of the United States."
+            ],
+            [
+                "5",
+                "Indonesia",
+                "275.773.800",
+                "3.44%",
+                "1 Jul 2022",
+                "Official estimate[7]",
+                ""
+            ],
+            [
+                "6",
+                "Pakistan",
+                "235.825.000",
+                "2.94%",
+                "1 Jul 2022",
+                "UN projection[3]",
+                "The figure includes the population of Pakistan-administered Azad Kashmir and Gilgit-Baltistan."
+            ],
+            [
+                "7",
+                "Nigeria",
+                "218.541.000",
+                "2.72%",
+                "1 Jul 2022",
+                "UN projection[3]",
+                ""
+            ],
+            [
+                "8",
+                "Brazil",
+                "215.916.931",
+                "2.69%",
+                "21 Mar 2023",
+                "National population clock[8]",
+                ""
+            ],
+            [
+                "9",
+                "Bangladesh",
+                "169.828.911",
+                "2.12%",
+                "15 Jun 2022",
+                "2022 final census result[9]",
+                ""
+            ],
+            [
+                "10",
+                "Russia",
+                "146.424.729",
+                "1.83%",
+                "1 Jan 2023",
+                "Official estimate[10]",
+                "Includes the Republic of Crimea and Sevastopol. administrative areas on the Crimean Peninsula occupied by Russia. The Ukrainian government and most of the world's other states consider the Crimean Peninsula part of Ukraine's territory."
+            ],
+            [
+                "11",
+                "Japan",
+                "124.490.000",
+                "1.55%",
+                "1 Mar 2023",
+                " Monthly estimate[12]",
+                ""
+            ]
+        ]
+    }
+]
